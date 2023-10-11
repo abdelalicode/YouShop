@@ -7,6 +7,7 @@ body {
 
 
 
+/* **** nav bar ****/
 
 nav {
     position: relative;
@@ -65,10 +66,7 @@ nav ul li a:hover{
 }
 
 
-main {
-  /* display: flex; 
-  justify-content: center; */
-}
+/* **** Main ****/
 
 .hero {
     display: flex; 
@@ -92,7 +90,7 @@ main {
     font-size: 2em;
 }
 
-button{
+.slider-btn{
     width: 15vw;
     height: 10vh;
     font-size: 0.5em;
@@ -101,13 +99,16 @@ button{
     background-color: transparent;
     border-radius: 3px;
     border: 1.5px solid #ffffff;
+    cursor: pointer;
 }
 
-button:hover {
+.slider-btn:hover {
     background-color: #ffffff;
     color: #717171;
     transition: 0.5s ease-in-out;
 }
+
+/***Middle Separator ***/
 
 .middle {
     display: flex;
@@ -125,3 +126,83 @@ button:hover {
     text-decoration: none;
     color: #A18A68;
 }
+
+
+/***Cards****/
+
+.card {
+    width : 26%;
+}
+.card p {
+    margin-top: -10px;
+    color: #A18A68 ;
+}
+
+.card span {
+    display: none;
+    
+    /* left: 30%; */
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.card:hover span {
+    display: block;
+}
+
+.imagebutton {
+    position: relative; 
+}
+
+.card-btn {
+    position: absolute;
+    top: 80%;
+    background: #dcdada;
+    width: 99%;
+    height: 10vh;
+    color: #000000;
+    font-size: medium;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.about {
+    padding-top: 80px;
+    width: 90vw;
+    margin: auto;
+}
+
+.about .about_title {
+    text-align: center;
+}
+
+/****Footer ***/
+
+.footer-content {
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content ul {
+    display: flex;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content ul li a{
+    line-height: 80px;
+    color: #000000;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
