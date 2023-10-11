@@ -66,7 +66,12 @@ nav ul li a:hover{
 
 
 main {
-  display: flex; 
+  /* display: flex; 
+  justify-content: center; */
+}
+
+.hero {
+    display: flex; 
   justify-content: center;
 }
 
@@ -88,7 +93,35 @@ main {
 }
 
 button{
+    width: 15vw;
+    height: 10vh;
+    font-size: 0.5em;
+    font-family: 'DM Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: #ffffff;
     background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid #ffffff;
+    border-radius: 3px;
+    border: 1.5px solid #ffffff;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #717171;
+    transition: 0.5s ease-in-out;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 3.5em;
+}
+
+.middle p{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.middle a{
+    text-decoration: none;
+    color: #A18A68;
 }
