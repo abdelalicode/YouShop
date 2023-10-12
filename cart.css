@@ -1,0 +1,21 @@
+table{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+tr {
+   height: 10vh;
+   background: #a7a5a518;
+}
+
+td img {
+    width: 10%;
+}
+
+.image_n_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+}

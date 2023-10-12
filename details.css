@@ -112,7 +112,13 @@ main {
     color: #fff;
 }
 
-.details_product_reviews {
+.details_product_reviews_top {
+    display: flex;
+    align-items: center;
+    gap: 2.9em;
+}
+
+.details_product_reviews_bottom {
     display: flex;
     align-items: center;
     gap: 2.9em;
