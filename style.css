@@ -176,33 +176,84 @@ nav ul li a:hover{
     margin: auto;
 }
 
+.about img {
+    width: 98%;
+    height: 500px ;
+}
 .about .about_title {
     text-align: center;
 }
 
 /****Footer ***/
 
+.socialmed {
+    margin-bottom: 40px;
+}
+
 .footer-content {
-    padding: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
 }
 
 .footer-content ul {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     list-style: none;
     float: left;
-    margin: 0;
-    padding: 0;
 }
 
 .footer-content ul li a{
     line-height: 80px;
     color: #000000;
-    padding: 12px 40px;
+    padding: 12px 30px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     text-decoration: none;
 }
 
+hr {
+    margin: 200px 100px 0px 100px;
+}
+
+.footer-right {
+    display : flex;
+    justify-content: space-between;
+}
+
+.footer-right input {
+    text-decoration: none;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 20px;
+    outline: none;
+}
+
+.footer-right input[type="button"] {
+    border: none;
+    cursor: pointer;
+}
+
+.footer-right input::placeholder {
+    font-size: 15px;
+}
+
+.socialmed {
+    float: right;
+    margin-right: 60px;
+}
+
+.socialmed button {
+    background: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.socialmed button a {
+    color: rgb(88, 88, 88);
+}
 
