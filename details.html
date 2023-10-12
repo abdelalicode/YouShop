@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouShop</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navter.css">
+    <link rel="stylesheet" href="navter.css" />
+    <link rel="stylesheet" href="details.css" />
     <link
       href="https://fonts.googleapis.com/css?family=DM Sans"
       rel="stylesheet"
@@ -44,23 +45,49 @@
     </header>
 
     <main>
-      <div class="hero">
-        <div class="slider">
-          <img src="images/Img01.png" alt="" />
-          <div class="title">
-            <p>Gold big hoops</p>
-            <p></p>
-            <p>$ 68,00</p>
-            <a href="#"><button class="slider-btn">View Product</button></a>
+      <p class="sitepath marg">Home / Rings / Details</p>
+      <h2 class="details_titles marg">Product Details</h2>
+      <div class="details_product">
+        <div class="details_product_img_container">
+          <img src="images/card-Img01.png" alt="" />
+          <div class="other_images_album">
+            <img src="images/card-Img01.png" alt="" />
+            <img src="images/card-Img01.png" alt="" />
+            <img src="images/card-Img01.png" alt="" />
+            <img src="images/card-Img01.png" alt="" />
+          </div>
+        </div>
+
+        <div class="details_product_rs">
+          <h3 class="details_product_rs_title">Lira Earring</h3>
+          <p class="details_product_rs_price">$ 20.00</p>
+          <p class="details_product_rs_descrip">
+            Steel back gold plated. The earrings are handmade in Barcelona.
+            These are unique pieces, so please have in mind that the
+            encapsulated details will be different in every design.
+          </p>
+
+          <div class="details_product_colors">
+            <div class="details_product-yellow"></div>
+            <div class="details_product-gray"></div>
+          </div>
+          <div class="add_n_reviews">
+            <div class="details_product_btn">
+              <a class="Add_Cart cart--btn" href="#">Add To Cart</a>
+              <a class="Add_watchlist wachlist--btn" href="#"
+                >Add To Watchlist</a
+              >
+            </div>
+
+            <div class="details_product_reviews">
+              <h3>Reviews:</h3>
+              <a href="">Add review</a>
+              <a href="">View All</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="middle">
-        <p>Shop The latest</p>
-        <a href="#">View All</a>
-      </div>
-
+      <h2 class="details_titles marg">You May Also Like</h2>
       <div class="grid">
         <div class="grid-item">
           <div class="card">
@@ -121,44 +148,11 @@
           </div>
         </div>
       </div>
-
-      <div class="about">
-        <div class="about_title">
-          <h1>About</h1>
-          <h2>Who we are and why we do what we do!</h2>
-        </div>
-
-        <p>
-          Duis rutrum dictum libero quis rutrum. Etiam sed neque aliquam,
-          sollicitudin ante a, gravida arcu. Nam fringilla molestie velit, eget
-          pellentesque risus scelerisque a. Nam ac urna maximus, tempor magna
-          et, placerat urna. Curabitur eu magna enim. Proin placerat tortor
-          lacus, ac sodales lectus placerat quis.
-        </p>
-        <h2>Top trends</h2>
-        <img src="images/About-Img01.png" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
-          maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis
-          consequat sed eu felis.
-        </p>
-        <h2>Produced with care</h2>
-        <img src="images/About-Img02.png" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a
-          maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis
-          consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio,
-          in molestie diam bibendu.
-        </p>
-      </div>
     </main>
   </body>
 
   <footer>
-
-    <hr>
+    <hr />
     <div class="footer-content">
       <ul>
         <li><a href="#">CONTACT</a></li>
@@ -168,18 +162,25 @@
 
       <div class="footer-right">
         <form>
-          <input type="mail" placeholder="Give an email, get the newsletter.">
-           <!-- <button class = footer_btn>&rarr;</button> -->
-          <input type="button" value = "&rarr;">
+          <input type="mail" placeholder="Give an email, get the newsletter." />
+          <!-- <button class = footer_btn>&rarr;</button> -->
+          <input type="button" value="&rarr;" />
         </form>
-        
       </div>
     </div>
     <div class="socialmed">
-      <button><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-twitter"></i></a></button>
+      <button>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </button>
     </div>
   </footer>
 </html>
