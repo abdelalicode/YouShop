@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouShop</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navter.css">
+    <link rel="stylesheet" href="navter.css" />
     <link
       href="https://fonts.googleapis.com/css?family=DM Sans"
       rel="stylesheet"
@@ -23,7 +23,9 @@
   <body>
     <header class="header">
       <nav>
-        <div class="logo"><span>You</span>Shope</div>
+        <div class="logo">
+          <a href="index.html"><span>You</span>Shope</a>
+        </div>
 
         <ul>
           <li><a href="#">Shop</a></li>
@@ -51,7 +53,7 @@
             <p>Gold big hoops</p>
             <p></p>
             <p>$ 68,00</p>
-            <a href="#"><button class="slider-btn">View Product</button></a>
+            <a href="#allitems"><button class="slider-btn">View Product</button></a>
           </div>
         </div>
       </div>
@@ -61,7 +63,7 @@
         <a href="#">View All</a>
       </div>
 
-      <div class="grid">
+      <div class="grid" id="allitems">
         <div class="grid-item">
           <div class="card">
             <div class="imagebutton">
@@ -157,8 +159,7 @@
   </body>
 
   <footer>
-
-    <hr>
+    <hr />
     <div class="footer-content">
       <ul>
         <li><a href="#">CONTACT</a></li>
@@ -168,18 +169,25 @@
 
       <div class="footer-right">
         <form>
-          <input type="mail" placeholder="Give an email, get the newsletter.">
-           <!-- <button class = footer_btn>&rarr;</button> -->
-          <input type="button" value = "&rarr;">
+          <input type="mail" placeholder="Give an email, get the newsletter." />
+          <!-- <button class = footer_btn>&rarr;</button> -->
+          <input type="button" value="&rarr;" />
         </form>
-        
       </div>
     </div>
     <div class="socialmed">
-      <button><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
-      <button><a href="#"><i class="fa-brands fa-twitter"></i></a></button>
+      <button>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </button>
+      <button>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </button>
     </div>
   </footer>
 </html>

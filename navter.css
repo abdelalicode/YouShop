@@ -17,6 +17,11 @@ nav {
     color: #A18A68;
 }
 
+.logo a {
+    text-decoration: none;
+    
+}
+
 .logo {
     padding: 25px 10px;
     /* height: 80px; */

@@ -6,7 +6,7 @@ table{
 
 tr {
    height: 10vh;
-   background: #a7a5a518;
+   background: #97969618;
 }
 
 td img {
@@ -16,6 +16,42 @@ td img {
 .image_n_title{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 15vh;
+}
+
+
+
+.checkout_btn {
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80vw;
+}
+
+.checkin--btn{
+    background-color: #304a99;
+    color: #ffffff;
+}
+
+.details_product_btn {
+    display: flex;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.removeitem--btn {
+    background-color: #de4444;
+    color: #fff;
+}
+
+.payment_method {
+    width: 6vw;
+    display: flex;
     justify-content: center;
-    gap: 20vh;
+    gap: 1.2em;
+}
+
+.payment_method img {
+    width: 2em;
 }
