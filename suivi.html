@@ -26,11 +26,15 @@
 
   <body>
     <header class="header">
-      <nav>
-        <div class="logo"><a href="index.html"><span>You</span>Shope</a></div>
+      <div class="logo">
+        <a href="index.html"><span>You</span>Shope</a>
+      </div>
 
-        <ul>
-          <li><a href="index.html">Shop</a></li>
+      <button class="mobile-nav" id="btn"></button>
+
+      <nav>
+        <ul id ="navigate">
+          <li><a href="#">Shop</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Our Story</a></li>
           <div class="separator">|</div>
@@ -63,57 +67,58 @@
             <p>Linda Earrings - Expected Delivery: in 3 Days</p>
           </td>
           <td>B725455</td>
-          <td>
-            On Delivery
-          </td>
+          <td>On Delivery</td>
           <td>CASAPORT</td>
         </tr>
         <tr>
           <td class="image_n_title">
             <img src="images/card-Img02.png" alt="" />
             <p>Hal Earrings- Expected Delivery: in 13 Days</p>
-           </td>
-          <td>A45691</td>
-          <td>
-            On Delivery
           </td>
+          <td>A45691</td>
+          <td>On Delivery</td>
           <td>CHINA</td>
         </tr>
       </table>
-
     </main>
+
+    <footer>
+      <hr />
+      <div class="footer-content">
+        <ul>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">TERM OF SERVICES</a></li>
+          <li><a href="#">SHIPPING AND RETURNS</a></li>
+        </ul>
+
+        <div class="footer-right">
+          <form>
+            <input
+              type="mail"
+              placeholder="Give an email, get the newsletter."
+            />
+            <!-- <button class = footer_btn>&rarr;</button> -->
+            <input type="button" value="&rarr;" />
+          </form>
+        </div>
+      </div>
+      <div class="socialmed">
+        <button>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </button>
+      </div>
+    </footer>
+    <script src="nav.js"></script>
   </body>
 
-  <footer>
-    <hr />
-    <div class="footer-content">
-      <ul>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">TERM OF SERVICES</a></li>
-        <li><a href="#">SHIPPING AND RETURNS</a></li>
-      </ul>
-
-      <div class="footer-right">
-        <form>
-          <input type="mail" placeholder="Give an email, get the newsletter." />
-          <!-- <button class = footer_btn>&rarr;</button> -->
-          <input type="button" value="&rarr;" />
-        </form>
-      </div>
-    </div>
-    <div class="socialmed">
-      <button>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      </button>
-    </div>
-  </footer>
+ 
 </html>

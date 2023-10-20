@@ -10,15 +10,15 @@ tr {
 }
 
 td img {
-    width: 10%;
+    width: 20%;
 }
 
-.image_n_title{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15vh;
+@media (max-width: 600px) {
+    td img {
+        width: 40%;
+    }
 }
+
 
 
 

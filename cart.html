@@ -25,11 +25,15 @@
 
   <body>
     <header class="header">
-      <nav>
-        <div class="logo"><a href="index.html"><span>You</span>Shope</a></div>
+      <div class="logo">
+        <a href="index.html"><span>You</span>Shope</a>
+      </div>
 
-        <ul>
-          <li><a href="index.html">Shop</a></li>
+      <button class="mobile-nav" id="btn"></button>
+
+      <nav>
+        <ul id="navigate">
+          <li><a href="#">Shop</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Our Story</a></li>
           <div class="separator">|</div>
@@ -50,13 +54,16 @@
       <p class="sitepath marg">Home / Rings / Cart</p>
       <h2 class="details_titles marg">Your Shopping Cart</h2>
       <table>
-        <tr>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-        </tr>
-        <tr>
+         <thead>
+          <tr>
+            <th>ITEM</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>TOTAL UNIT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
           <td class="image_n_title">
             <img src="images/card-Img01.png" alt="" />
             <p>Linda Earrings</p>
@@ -73,61 +80,76 @@
           <td class="image_n_title">
             <img src="images/card-Img02.png" alt="" />
             <p>Hal Earrings</p>
-           </td>
+          </td>
           <td>$ 25.00</td>
           <td>
             <button>-</button>
             1
             <button>+</button>
-          </td>
-          <td>$ 25.00</td>
+            </td>
+            <td>$ 25.00</td>
+          </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">TOTAL</td>
+          <td>$ 00.00</td>
         </tr>
+      </tfoot>
       </table>
 
       <div class="checkout_btn">
         <div class="details_product_btn">
-          <a class="Add_Cart checkin--btn" href="payment.html">Checkout Securly</a>
+          <a class="Add_Cart checkin--btn" href="payment.html"
+            >Checkout Securly</a
+          >
           <div class="payment_method">
-            <img src="images/mastercard.png" alt="">
-            <img src="images/visa.png" alt="">
-            <img src="images/paypal.png" alt="">
+            <img src="images/mastercard.png" alt="" />
+            <img src="images/visa.png" alt="" />
+            <img src="images/paypal.png" alt="" />
           </div>
           <a class="Add_watchlist removeitem--btn" href="#">Add To Watchlist</a>
         </div>
       </div>
     </main>
-  </body>
 
-  <footer>
-    <hr />
-    <div class="footer-content">
-      <ul>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">TERM OF SERVICES</a></li>
-        <li><a href="#">SHIPPING AND RETURNS</a></li>
-      </ul>
+    <footer>
+      <hr />
+      <div class="footer-content">
+        <ul>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">TERM OF SERVICES</a></li>
+          <li><a href="#">SHIPPING AND RETURNS</a></li>
+        </ul>
 
-      <div class="footer-right">
-        <form>
-          <input type="mail" placeholder="Give an email, get the newsletter." />
-          <!-- <button class = footer_btn>&rarr;</button> -->
-          <input type="button" value="&rarr;" />
-        </form>
+        <div class="footer-right">
+          <form>
+            <input
+              type="mail"
+              placeholder="Give an email, get the newsletter."
+            />
+            <!-- <button class = footer_btn>&rarr;</button> -->
+            <input type="button" value="&rarr;" />
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="socialmed">
-      <button>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      </button>
-    </div>
-  </footer>
+      <div class="socialmed">
+        <button>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </button>
+      </div>
+    </footer>
+
+    <script src="nav.js"></script>
+  </body>
 </html>

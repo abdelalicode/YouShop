@@ -23,11 +23,15 @@
 
   <body>
     <header class="header">
-      <nav>
-        <div class="logo"><a href="index.html"><span>You</span>Shope</a></div>
+      <div class="logo">
+        <a href="index.html"><span>You</span>Shope</a>
+      </div>
 
-        <ul>
-          <li><a href="index.html">Shop</a></li>
+      <button class="mobile-nav" id="btn"></button>
+
+      <nav>
+        <ul id="navigate">
+          <li><a href="#">Shop</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Our Story</a></li>
           <div class="separator">|</div>
@@ -94,99 +98,87 @@
         </div>
       </div>
       <h2 class="details_titles marg">You May Also Like</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img01.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
+      <!-- Cards -->
+      <div class="container" id="allitems">
+        <div class="card">
+          <img src="images/card-Img01.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Lira Earrings</h2>
+          <p>$ 20.00</p>
+        </div>
 
-            <h2 class="card-title">Lira Earrings</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img02.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
+        <div class="card">
+          <img src="images/card-Img02.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Hal Earrings</h2>
+          <p>$ 20.00</p>
+        </div>
 
-            <h2 class="card-title">Hal Earrings</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img03.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
+        <div class="card">
+          <img src="images/card-Img03.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Kaede Pin Hair Set of 3</h2>
+          <p>$ 20.00</p>
+        </div>
 
-            <h2 class="card-title">Kaede Pin Hair Set of 3</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
+        <div class="card">
+          <img src="images/card-Img04.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Hair Pin Set of 3</h2>
+          <p>$ 20.00</p>
+        </div>
 
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img04.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
+        <div class="card">
+          <img src="images/card-Img05.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Plain Necklace</h2>
+          <p>$ 20.00</p>
+        </div>
 
-            <h2 class="card-title">Hair Pin Set of 3</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img05.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
-
-            <h2 class="card-title">Plain Necklace</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
-
-          <div class="card">
-            <div class="imagebutton">
-              <img class="card-img" src="images/card-Img06.png" alt="" />
-              <span><a href="details.html">ADD TO CART</a></span>
-            </div>
-
-            <h2 class="card-title">Yuki Hair Pin Set of 3</h2>
-            <p class="card-price">$ 20.00</p>
-          </div>
+        <div class="card">
+          <img src="images/card-Img06.png" alt="" />
+          <div class="card_btn"><a href="details.html">ADD TO CART</a></div>
+          <h2>Yuki Hair Pin Set of 3</h2>
+          <p>$ 20.00</p>
         </div>
       </div>
     </main>
-  </body>
 
-  <footer>
-    <hr />
-    <div class="footer-content">
-      <ul>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">TERM OF SERVICES</a></li>
-        <li><a href="#">SHIPPING AND RETURNS</a></li>
-      </ul>
+    <footer>
+      <hr />
+      <div class="footer-content">
+        <ul>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">TERM OF SERVICES</a></li>
+          <li><a href="#">SHIPPING AND RETURNS</a></li>
+        </ul>
 
-      <div class="footer-right">
-        <form>
-          <input type="mail" placeholder="Give an email, get the newsletter." />
-          <!-- <button class = footer_btn>&rarr;</button> -->
-          <input type="button" value="&rarr;" />
-        </form>
+        <div class="footer-right">
+          <form>
+            <input
+              type="mail"
+              placeholder="Give an email, get the newsletter."
+            />
+            <!-- <button class = footer_btn>&rarr;</button> -->
+            <input type="button" value="&rarr;" />
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="socialmed">
-      <button>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </button>
-      <button>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      </button>
-    </div>
-  </footer>
+      <div class="socialmed">
+        <button>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </button>
+        <button>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </button>
+      </div>
+    </footer>
+    <script src="nav.js"></script>
+  </body>
 </html>
