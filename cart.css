@@ -1,3 +1,370 @@
+h1 {
+    padding-top: 40px;
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.3em;
+}
+
+p {
+    font-weight: 600;
+}
+
+.background {
+    padding: 10px 40px;
+}
+
+.carl_rs_itemnprice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_cart hr {
+    margin: 0;
+}
+
+.container_cart {
+    background: rgb(255, 255, 255);
+    padding: 30px 10px;
+    height: fit-content;
+    display: flex;
+    /* border-top: 1px solid #a2a4d8 ;
+    border-bottom: 1px solid #a2a4d8 ; */
+}
+
+.cart_rs {
+    position: sticky;
+    top: 10%;
+    background: rgb(231, 231, 231);
+    width: 30%;
+    height: fit-content;
+    padding: 20px 40px 60px;
+}
+
+
+.ship_n_promo select {
+    background-color: rgb(243, 243, 243);
+    width: 250px;
+    height: 40px;
+    font-size: 1em;
+    padding: 0px 15px;
+    border-color: rgb(243, 243, 243);
+}
+
+.ship_n_promo select:focus{
+    outline: none;
+}
+
+.select-selected {
+    border-color: rgb(243, 243, 243);
+}
+
+.cart_ls {
+    background: rgb(246, 246, 246);
+    width: 70%;
+    height: fit-content;
+    align-self: flex-start;
+    padding: 20px 60px;
+}
+
+.descript .btn {
+    background-color: rgb(147, 147, 147);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+.top_header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.actual_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 3% 5%;
+}
+
+.actual_header p{
+   font-size: 0.85em;
+   font-weight: 600;
+   color: #878787;
+}
+
+.rs_actual_header {
+    display: flex;
+    gap: 6vw;
+}
+
+.cart_rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px ;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(244, 243, 243);
+    height: fit-content;
+    box-shadow: 0 3px 10px rgba(162, 162, 162, 0.2);
+    flex-wrap: wrap;
+}
+
+.row .remove_xbtn{
+    position: absolute;
+    width: 2.5vw;
+    height: 5vh;
+    font-family: 1.5em;
+    top: 2%;
+    right: 2%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.row .remove_xbtn i {
+    color: #575757;
+}
+
+.ticket_rm_xbtn {
+    position: absolute;
+    width: 2.5vw;
+    height: 5vh;
+    font-family: 1.5em;
+    top: 5%;
+    right: 5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (min-width:901px ) {
+    .ticket_rm_xbtn {
+        display: none;
+    }
+}
+
+.rmdiv{
+    display : none;
+}
+
+.image_n_descript {
+    display: flex;
+    gap: 35px;
+    padding: 15px 10px;
+    line-height: 0.8em;
+    align-items: center;
+}
+
+.image_n_descript img {
+        display: block;
+        max-width:230px;
+        max-height:95px;
+        width: auto;
+        height: auto;
+        border: 0.2px solid gray;
+}
+
+.descript p {
+    margin: 12px 0;
+}
+
+.category {
+    color: #e26161;
+}
+
+.rs_row {
+    display: flex;
+    gap: 4.5vw;
+    margin-right: 3.5%;
+}
+
+.quantity_compt {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity_compt input[type=number] {
+    -moz-appearance: textfield;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid gray;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.015em;
+    padding-left: 0.3em;
+    text-align: center;
+  }
+
+  .quantity_compt button {
+    width: 2.5vw;
+    border: none;
+    background: transparent;
+    font-size: 1.3em;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1300px) {
+    .actual_header {
+        display: none;
+    }
+    
+    .rs_row {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2em;
+        gap: 10px;
+    }
+  }
+
+
+  @media (max-width: 1050px) {
+    .rs_row {
+        margin-left: 10px;
+        flex-direction: row;
+        margin-right: 2em;
+        gap: 20px;
+    }
+  }
+
+.ship_n_promo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Firefox */
+.promo input[type=number] {
+  -moz-appearance: textfield;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  width: 220px;
+  height: 40px;
+  font-size: 1.015em;
+  padding: 0px 18px;
+}
+
+.promo input[type=number]:focus{
+    outline: none;
+}
+
+.promo input[type=submit] {
+    background-color: #e26161;
+    border: none;
+    width: 30%;
+    padding: 10px 0px;
+    color: aliceblue;
+}
+
+.total_cost{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_rs a {
+background-color: #404165;
+  color: white;
+  font-size: 1.015em;
+  padding: 4% 10%;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+@media (max-width:1100px) {
+    .container_cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_ls {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cart_rs {
+        width: 80%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:570px) {
+    .cart_ls {
+        padding: 20px;
+    }
+
+    .cart_rs {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:470px) { 
+.background{
+    padding: 10px;
+}
+
+.image_n_descript {
+    gap: 15px;
+    padding: 5px 5px;
+}
+}
+
+.ticketB {
+    display: none;
+    margin: 0 auto;
+    width: 15em;
+    height: 5em;
+    border: none;
+    background: #686AA1;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 901px) {
+    .ticketB {
+        display: block;
+    }
+
+    .cart_rs {
+           position: fixed;
+           display: none;
+    }
+    .action{
+        display: initial;
+    }
+}
+
+    .activeTicket{
+    display: block;
+}
+
+
+/* Suivi */
+
 table{
     text-align: center;
     width: 90%;
@@ -19,39 +386,3 @@ td img {
     }
 }
 
-
-
-
-.checkout_btn {
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-end;
-    width: 80vw;
-}
-
-.checkin--btn{
-    background-color: #304a99;
-    color: #ffffff;
-}
-
-.details_product_btn {
-    display: flex;
-    align-items: center;
-    row-gap: 5px;
-}
-
-.removeitem--btn {
-    background-color: #de4444;
-    color: #fff;
-}
-
-.payment_method {
-    width: 6vw;
-    display: flex;
-    justify-content: center;
-    gap: 1.2em;
-}
-
-.payment_method img {
-    width: 2em;
-}

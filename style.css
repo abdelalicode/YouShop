@@ -163,6 +163,11 @@ body {
     display: block;
    
 }
+
+.card p {
+    font-size: 1.125em;
+    color :#A18A68;
+}
 .about {
     padding-top: 80px;
     width: 90vw;

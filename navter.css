@@ -33,6 +33,10 @@ nav {
     
 }
 
+.logo a:active {
+    color: #686AA1;
+}
+
 .logo {
     /* padding: 25px 10px; */
     /* height: 80px; */
@@ -86,6 +90,7 @@ nav ul li a:hover{
 }
 
 @media (max-width: 600px) {
+    
     nav ul {
        position: fixed;
        inset: 0 0 0 30%;
@@ -94,8 +99,7 @@ nav ul li a:hover{
        z-index: 20;
        justify-content: flex-start;
        transform: translateX(150%);
-       transition: all 0.6s linear;
-       
+       transition: all 0.5s linear;
     }
 
      /* nav ul:nth-child(6) {
@@ -109,9 +113,9 @@ nav ul li a:hover{
         display: none;
      }
 
-     .navigate[data-visible ="true"] {
+     /* .navigate[data-visible ="true"] {
         transform: translateX(0%);
-     }
+     } */
 
      .mobile-nav {
         display: block;
@@ -159,7 +163,7 @@ nav ul li a:hover{
 }
 
 hr {
-    margin: 200px 100px 0px 100px;
+    margin: 100px 100px 0px 100px;
 }
 
 .footer-right {

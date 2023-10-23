@@ -42,7 +42,7 @@
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
           <li>
             <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -54,12 +54,12 @@
     <main>
       <p class="sitepath marg">Home / Rings / Form</p>
       <h2 class="details_titles marg">Enter Your Payment Info</h2>
-
-      <div class="container">
+      <div class="payment_general">
+        <div class="container_pay">
         <form>
-          <div class="row">
-            <div class="col">
-              <h3 class="title">billing address</h3>
+          <div class="row_pay">
+            <div class="colu">
+              <h3 class="title">BILLING ADRESS</h3>
 
               <div class="inputBox">
                 <span>Full Name :</span>
@@ -90,8 +90,8 @@
               </div>
             </div>
 
-            <div class="col">
-              <h3 class="title">Payment Info</h3>
+            <div class="colu">
+              <h3 class="title">PAYMENT INFO</h3>
 
               <div class="inputBox">
                 <span>Name on Card :</span>
@@ -117,15 +117,58 @@
                 </div>
               </div>
             </div>
-            <input
+            
+          </div>
+          <input
               type="submit"
-              value="Proceed to Checkout"
+              value="SUBMIT"
               class="submit-btn"
             />
-          </div>
         </form>
+        </div>
+        <div class="cart_rs">
+  
+        <button class = "ticket_rm_xbtn" id ="btn_rm_ticket"><i class="fa-solid fa-x fa-lg"></i></button>
+        <h2>ORDER SUMMARY</h2>
+        <br>
+        <hr>
+        <div class="carl_rs_itemnprice">
+          <p><span class="num_items">3</span> ITEMS</p>
+          <p>$ 120.00</p>
+        </div>
+        <div class="ship_n_promo">
+          <div class="paymeta">
+            <p>PAYMENT METHOD</p>
+            <input type="radio" name="pay" id="visa">
+            <label for="visa">VISA</label>
+            <input type="radio" name="pay" id="master">
+            <label for="master">MASTERCARD</label>
+            <input type="radio" name="pay" id="paypl">
+            <label for = "paypl">PAYPAL</label>
+
+          </div>
+            
+          <div><p>PROMO CODE</p>
+            <form class="promo">
+                  <input type="number" min="0" placeholder="Enter your code">
+                 <input type="submit" value ="APPLY">
+            </form></div>
+          
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="total_cost">
+          <h2>TOTAL COST</h2>
+          <p>$ 125.00</p>
+        </div>
+        <br>
+        <a href="suivi.html">CHECK YOUR ORDER</a>
+        </div>       
       </div>
-      <div class="check_order"><a href="suivi.html">Check Your Order</a></div>
+    <button class="ticketB" id ="btn_ticket"><i class="fa-solid fa-rug"></i>&nbsp;&nbsp;GET YOUR TICKET</button>
+  </div>
+      <!-- <div class="check_order"><a href="suivi.html">Check Your Order</a></div> -->
     </main>
 
     <footer>
