@@ -281,6 +281,12 @@ input::-webkit-inner-spin-button {
 .total_cost{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.Alltotal_price {
+    font-size: 1.025em;
+    font-weight: 600;
 }
 
 .cart_rs a {

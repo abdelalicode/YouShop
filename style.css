@@ -74,7 +74,7 @@ body {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .slider .title {
         font-size: 0.6em;
     }
@@ -90,6 +90,8 @@ body {
     color: #717171;
     transition: 0.5s ease-in-out;
 }
+
+
 
 /***Middle Separator ***/
 
@@ -124,7 +126,7 @@ body {
 }
 
 .card{
-    position: relative;
+    
     width: 380px;
     height: 472px;
 }
@@ -133,12 +135,18 @@ body {
     width: 100%;
 }
 
+.productImage {
+    position: relative;
+    width: 100%;
+    height: 388px;
+}
+
 .card_btn {
     background: #dcdada;
     width: 100%;
-    height: 80px;
+    height: 20%;
     position: absolute;
-    bottom: 19%;
+    bottom: 1%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     justify-content: center;
@@ -163,6 +171,16 @@ body {
     display: block;
    
 }
+
+@media (max-width: 410px) {
+    .productImage {
+        height: 95vw;
+    }
+    .container {
+        gap: 2px;
+    } 
+}
+
 
 .card p {
     font-size: 1.125em;
