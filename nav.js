@@ -40,6 +40,7 @@ for (let i = 0; i < alldiv_row.length; i++) {
          currentNumrItems--;
          numrItems.textContent = currentNumrItems;
       }
+      PriceTotal();
    })
 };
 
@@ -49,9 +50,11 @@ const decrem = document.getElementById("decrem");
 const increm = document.getElementById("increm");
 const quanum = document.getElementById("quanum");
 
-
 const singleItemPrice = document.querySelector(".singleItem_price span");
 const totalItemPrice = document.querySelector(".TotalItem_price span");
+const singleItem2Price = document.querySelector(".singleItem2_price span").textContent;
+const totalItem2Price = document.querySelector(".TotalItem2_price span").textContent;
+const Alltotal_price = document.querySelector(".Alltotal_price span");
 
 const pricePerItem = singleItemPrice.textContent;
 
@@ -61,11 +64,16 @@ function updatePrice() {
   totalItemPrice.textContent = totalPrice.toFixed(2);
 }
 
+function PriceTotal(){
+   let TotalAll = Number(totalItem2Price) + Number(totalItemPrice.textContent);
+   Alltotal_price.textContent = TotalAll.toFixed(2);
+}
 
 increm.addEventListener('click',function(){
     let currentValue = +quanum.value;
     quanum.value = currentValue + 1;
     updatePrice();
+    PriceTotal();
 });
 
 decrem.addEventListener("click", function () {
@@ -73,10 +81,12 @@ decrem.addEventListener("click", function () {
    if (currentValue > 1) {
      quanum.value = currentValue - 1;
      updatePrice();
+     PriceTotal();
    }
  });
 
  updatePrice();
+ PriceTotal();
 
 
 
