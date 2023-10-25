@@ -30,6 +30,7 @@ for (let i = 0; i < alldiv_row.length; i++) {
    allx[i].addEventListener('click', function(){
 
       alldiv_row[i].classList.add("rmdiv"); 
+      
       let currentNumItems = +numItems.textContent;
       if (currentNumItems > 0) {
          currentNumItems--;
@@ -58,6 +59,18 @@ const Alltotal_price = document.querySelector(".Alltotal_price span");
 
 const pricePerItem = singleItemPrice.textContent;
 
+function updateTotalPrice() {
+   let totalAll = 0;
+   for (let i = 0; i < alldiv_row.length; i++) {
+     if (!alldiv_row[i].classList.contains("rmdiv")) {
+       totalAll += +totalItemPrice.textContent;
+     }
+   }
+   AlltotalPrice.textContent = totalAll.toFixed(2);
+   numItems.textContent = alldiv_row.length - document.querySelectorAll('.rmdiv').length;
+   numrItems.textContent = alldiv_row.length - document.querySelectorAll('.rmdiv').length;
+ }
+
 function updatePrice() {
   const quantity = +quanum.value;
   const totalPrice = pricePerItem * quantity;
@@ -74,6 +87,7 @@ increm.addEventListener('click',function(){
     quanum.value = currentValue + 1;
     updatePrice();
     PriceTotal();
+    updateTotalPrice();
 });
 
 decrem.addEventListener("click", function () {
@@ -82,14 +96,13 @@ decrem.addEventListener("click", function () {
      quanum.value = currentValue - 1;
      updatePrice();
      PriceTotal();
+     updateTotalPrice();
    }
  });
 
  updatePrice();
  PriceTotal();
+ updateTotalPrice();
 
-
-
-
-
+//Form Validation
 

@@ -15,7 +15,8 @@ form {
 
 form input[type="submit"] {
       display: block;
-      margin: 10px auto;
+      margin: 20px auto;
+      width: 40%;
 }
 
 .cart_rs hr {
@@ -31,7 +32,7 @@ input[type = "radio"] {
       display: none;
 }
 
-label {
+.paymeta label {
       display: flex;
       align-items: center;
       position: relative;
@@ -43,7 +44,7 @@ label {
       padding: 2%;
 }
 
-label:before{
+.paymeta label:before{
       content: "";
       height: 15%;
       width: 15%;
@@ -94,6 +95,11 @@ input[type="radio"]:checked + label {
 }
 
 .inputBox input {
+      width: 20em;
+      height: 2em;
+}
+
+.inputBox select {
       width: 20em;
       height: 2em;
 }
