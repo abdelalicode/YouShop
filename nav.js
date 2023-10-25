@@ -104,5 +104,3 @@ decrem.addEventListener("click", function () {
  PriceTotal();
  updateTotalPrice();
 
-//Form Validation
-
